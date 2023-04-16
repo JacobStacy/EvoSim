@@ -195,7 +195,7 @@ class Worm:
  
    
 random.seed()
-farm = Farm(min=-1000000,max=1000000, n_worms=10000, mutation_rate=.1, death_rate=.1)
+farm = Farm(min=-1000000,max=1000000, n_worms=10000, mutation_rate=.1)
 
 print(farm)   
 
