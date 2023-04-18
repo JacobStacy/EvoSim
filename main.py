@@ -195,16 +195,17 @@ class Worm:
  
    
 random.seed()
-farm = Farm(min=-1000000,max=1000000, n_worms=10000, mutation_rate=.1)
+farm = Farm(min=-10000,max=10000, n_worms=20, mutation_rate=.01)
 
 print(farm)   
 
 totals = [farm.get_total()]
-for i in range(5000):
+for i in range(10000):
     farm.run_generation()
     
     total = farm.get_total()
-    print("Generation: ",farm.n_generation, " Total:", sci_not(total))
+    # print("Generation: ",farm.n_generation, " Total:", sci_not(total))
+    print(farm)
        
     totals.append(total)
         
